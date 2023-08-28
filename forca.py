@@ -33,6 +33,56 @@ def mensagem_vencedor():
     print("         _.' '._        ")
     print("        '-------'       ")
 
+def desenha_forca(erros):
+    print("  _______     ")
+    print(" |/      |    ")
+
+    if(erros == 1):
+        print(" |      (_)   ")
+        print(" |            ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 2):
+        print(" |      (_)   ")
+        print(" |      \     ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 3):
+        print(" |      (_)   ")
+        print(" |      \|    ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 4):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |            ")
+        print(" |            ")
+
+    if(erros == 5):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |            ")
+
+    if(erros == 6):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      /     ")
+
+    if (erros == 7):
+        print(" |      (_)   ")
+        print(" |      \|/   ")
+        print(" |       |    ")
+        print(" |      / \   ")
+
+    print(" |            ")
+    print("_|___         ")
+    print()
+
 print("------------------------------")
 print("Bem vindo(a) ao jogo da forca!")
 print("------------------------------")
@@ -68,7 +118,7 @@ while not enforcou and not acertou:
             index += 1
     else:
         erros += 1
-        if erros >= 5:
+        if erros >= 7:
             enforcou = True
 
     acertou = "_" not in letras_certas
