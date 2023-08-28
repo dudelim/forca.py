@@ -120,6 +120,7 @@ while not enforcou and not acertou:
         erros += 1
         if erros >= 7:
             enforcou = True
+        desenha_forca(erros)
 
     acertou = "_" not in letras_certas
     print(letras_certas)
